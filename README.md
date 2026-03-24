@@ -1,4 +1,4 @@
-# 📡 Stylist_OS // v1.1
+# 📡 Stylist_OS // v0.1
 
 A hyper-personalized, multi-tenant wardrobe management system. Built for the academic grind, the warehouse shifts, and everything in between.
 
