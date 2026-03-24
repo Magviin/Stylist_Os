@@ -1,66 +1,93 @@
 @import "tailwindcss";
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --panel: #151515;
-  --card: #111111;
-  --border: #222222;
-  --border-subtle: #333333;
-  --accent: #fde68a;
-  --accent-muted: #451a03;
-  --text-muted: #888888;
-  --text-subtle: #555555;
-  --bg-contrast: #e8e6e3; /* For the user bubble / primary CTA */
-  --interactive-highlight: #ffffff;
-  --border-strong: #444444;
-  --destructive-border: #7f1d1d;
-  --destructive-text: #fca5a5;
-  --destructive-hover-border: #f87171;
-  --destructive-hover-text: #ef4444;
-  --destructive-surface: #450a0a;
+/* --- 1. DEFAULT: ONYX_AMBER --- */
+:root, [data-theme='default'][data-mode='dark'] {
+  --background: #0a0a0a; --foreground: #fde68a; --panel: #151515; --card: #111111;
+  --border: #222222; --accent: #fde68a; --text-muted: #888888; --bg-contrast: #e8e6e3;
+}
+[data-theme='default'][data-mode='light'] {
+  --background: #fffdf5; --foreground: #451a03; --panel: #fcf6e5; --card: #f9f0d7;
+  --border: #e6dec5; --accent: #b45309; --text-muted: #92400e; --bg-contrast: #451a03;
 }
 
-[data-theme='parchment'] {
-  --background: #f4f1ea;
-  --foreground: #433d35;
-  --panel: #eae4d3;
-  --card: #dfd8c4;
-  --border: #d1c7b7;
-  --border-subtle: #c4b9a8;
-  --accent: #8b4513;
-  --accent-muted: #f5deb3;
-  --text-muted: #7a7369;
-  --text-subtle: #a69d8f;
-  --bg-contrast: #433d35; /* Inverts for the contrast bubble */
-  --interactive-highlight: #f5f2eb;
-  --border-strong: #bfb5a3;
-  --destructive-border: #991b1b;
-  --destructive-text: #b91c1c;
-  --destructive-hover-border: #dc2626;
-  --destructive-hover-text: #b91c1c;
-  --destructive-surface: #fef2f2;
+/* --- 2. ACADEMIA: PARCHMENT --- */
+[data-theme='parchment'][data-mode='dark'] {
+  --background: #1a1714; --foreground: #e2d8c3; --panel: #26221e; --card: #1f1c19;
+  --border: #3d362f; --accent: #d4a373; --text-muted: #8b7e74; --bg-contrast: #e2d8c3;
+}
+[data-theme='parchment'][data-mode='light'] {
+  --background: #f4f1ea; --foreground: #433d35; --panel: #eae4d3; --card: #dfd8c4;
+  --border: #d1c7b7; --accent: #8b4513; --text-muted: #7a7369; --bg-contrast: #433d35;
 }
 
-[data-theme='voltage'] {
-  --background: #000000;
-  --foreground: #00ff41;
-  --panel: #0a0a0a;
-  --card: #050505;
-  --border: #00ff41;
-  --border-subtle: #008f24;
-  --accent: #00ff41;
-  --accent-muted: #002200;
-  --text-muted: #00ff41;
-  --text-subtle: #004411;
-  --bg-contrast: #00ff41;
-  --interactive-highlight: #39ff5c;
-  --border-strong: #00cc33;
-  --destructive-border: #ff4444;
-  --destructive-text: #ff6b6b;
-  --destructive-hover-border: #ff8888;
-  --destructive-hover-text: #ff9999;
-  --destructive-surface: #330000;
+/* --- 3. VOLTAGE: CRT_GREEN --- */
+[data-theme='voltage'][data-mode='dark'] {
+  --background: #000000; --foreground: #00ff41; --panel: #050505; --card: #080808;
+  --border: #00ff41; --accent: #00ff41; --text-muted: #008f11; --bg-contrast: #00ff41;
+}
+[data-theme='voltage'][data-mode='light'] {
+  --background: #eaffea; --foreground: #003b00; --panel: #d1ffd1; --card: #b8ffb8;
+  --border: #008f11; --accent: #006400; --text-muted: #004d00; --bg-contrast: #003b00;
+}
+
+/* --- 4. VAULT: DEEP_BLUE --- */
+[data-theme='vault'][data-mode='dark'] {
+  --background: #000814; --foreground: #00a3ff; --panel: #00122e; --card: #000c1f;
+  --border: #002b4d; --accent: #00ccff; --text-muted: #007acc; --bg-contrast: #00a3ff;
+}
+[data-theme='vault'][data-mode='light'] {
+  --background: #e6f7ff; --foreground: #003d66; --panel: #bae7ff; --card: #91d5ff;
+  --border: #40a9ff; --accent: #0050b3; --text-muted: #003a8c; --bg-contrast: #003d66;
+}
+
+/* --- 5. BLOOD: SANGUINE --- */
+[data-theme='blood'][data-mode='dark'] {
+  --background: #0d0000; --foreground: #ff4d4d; --panel: #1a0000; --card: #110000;
+  --border: #4d0000; --accent: #ff0000; --text-muted: #a60000; --bg-contrast: #ff4d4d;
+}
+[data-theme='blood'][data-mode='light'] {
+  --background: #fff1f0; --foreground: #a8071a; --panel: #ffccc7; --card: #ffa39e;
+  --border: #ff4d4f; --accent: #cf1322; --text-muted: #820014; --bg-contrast: #a8071a;
+}
+
+/* --- 6. NEON: CYBER --- */
+[data-theme='neon'][data-mode='dark'] {
+  --background: #0b0014; --foreground: #f0f; --panel: #1a0033; --card: #120024;
+  --border: #bc13fe; --accent: #0ff; --text-muted: #bc13fe; --bg-contrast: #f0f;
+}
+[data-theme='neon'][data-mode='light'] {
+  --background: #fff0f6; --foreground: #9e1068; --panel: #ffd6e7; --card: #ffadd2;
+  --border: #eb2f96; --accent: #722ed1; --text-muted: #c41d7f; --bg-contrast: #9e1068;
+}
+
+/* --- 7. FOREST: MOSS --- */
+[data-theme='forest'][data-mode='dark'] {
+  --background: #080a08; --foreground: #90ee90; --panel: #111411; --card: #0d0f0d;
+  --border: #222b22; --accent: #4ade80; --text-muted: #22c55e; --bg-contrast: #90ee90;
+}
+[data-theme='forest'][data-mode='light'] {
+  --background: #f6ffed; --foreground: #135200; --panel: #d9f7be; --card: #b7eb8f;
+  --border: #73d13d; --accent: #389e0d; --text-muted: #237804; --bg-contrast: #135200;
+}
+
+/* --- 8. SAND: DESERT --- */
+[data-theme='sand'][data-mode='dark'] {
+  --background: #1c1917; --foreground: #fcd34d; --panel: #292524; --card: #221f1e;
+  --border: #44403c; --accent: #fcd34d; --text-muted: #a8a29e; --bg-contrast: #fcd34d;
+}
+[data-theme='sand'][data-mode='light'] {
+  --background: #fffbe6; --foreground: #874d00; --panel: #fff1b8; --card: #ffe58f;
+  --border: #ffc53d; --accent: #d48806; --text-muted: #ad6800; --bg-contrast: #874d00;
+}
+
+/* --- 9. GHOST: PHANTOM --- */
+[data-theme='ghost'][data-mode='dark'] {
+  --background: #121212; --foreground: #ffffff; --panel: #1e1e1e; --card: #181818;
+  --border: #333333; --accent: #ffffff; --text-muted: #888888; --bg-contrast: #ffffff;
+}
+[data-theme='ghost'][data-mode='light'] {
+  --background: #ffffff; --foreground: #000000; --panel: #f5f5f5; --card: #eeeeee;
+  --border: #d9d9d9; --accent: #000000; --text-muted: #8c8c8c; --bg-contrast: #000000;
 }
 
 @theme inline {
@@ -69,17 +96,7 @@
   --color-panel: var(--panel);
   --color-card: var(--card);
   --color-border-dim: var(--border);
-  --color-border-subtle: var(--border-subtle);
   --color-accent: var(--accent);
-  --color-accent-muted: var(--accent-muted);
   --color-text-muted: var(--text-muted);
-  --color-text-subtle: var(--text-subtle);
   --color-bg-contrast: var(--bg-contrast);
-  --color-interactive-highlight: var(--interactive-highlight);
-  --color-border-strong: var(--border-strong);
-  --color-destructive-border: var(--destructive-border);
-  --color-destructive-text: var(--destructive-text);
-  --color-destructive-hover-border: var(--destructive-hover-border);
-  --color-destructive-hover-text: var(--destructive-hover-text);
-  --color-destructive-surface: var(--destructive-surface);
 }
