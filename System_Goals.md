@@ -1,4 +1,3 @@
-cat << 'EOF' > SYSTEM_GOALS.md
 # SYSTEM_GOALS.md // THE OUTFIT_ENGINE OVERHAUL
 
 ## 1. Stylist_Brain // Intelligence Layer
