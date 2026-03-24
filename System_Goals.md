@@ -58,3 +58,81 @@ Allow manual editing of Material, Brand, and Primary_Color before the final save
 [ ] Sector_Weather_Widget: A tiny, 1-line text display on the dashboard showing current Lake Tapps temperature and precip (e.g., NW_SECTOR: 48°F // LIGHT_RAIN).
 
 [ ] Custom_Tag_Inject: A text field during scanning to add custom metadata like "Thrifted," "Work_Uniform," or "Gift_From_GF."
+7. Advanced_Architecture (The "Lifestyle" Logic)
+[ ] Sector_Travel (Packing_Mode):
+
+Generate a "Packing Cube" layout based on your destination.
+
+Example: "10-Day Costa Rica Logic"—prioritize linen, moisture-wicking, and swim gear. Cross-reference with the weight limit for a carry-on.
+
+[ ] The "Jetta_Pilot" Integration:
+
+Footwear-specific logic for manual driving. The AI flags "Clunky Boots" when you have a long commute to Green River, suggesting flexible soles for better clutch feel.
+
+[ ] Scent_Sync (Fragrance_Mapping):
+
+Create a "Scent Library" for your Nautica and English Laundry collections.
+
+The AI suggests a fragrance based on the outfit's "Vibe Score" (e.g., "Parchment_Light + English Laundry = Sophisticated Academic").
+
+[ ] Gym_Protocol (PPL_Vault):
+
+Categorize workout gear by "Push," "Pull," or "Legs."
+
+The AI tracks "Compression_Level" and "Sweat_History" to ensure you aren't wearing deadlift socks on chest day.
+
+[ ] Semantic_Vault_Search:
+
+Implement vector embeddings (using Ollama) so you can search by feeling instead of keywords.
+
+Search: "Something that feels like a rainy night in Seattle" → returns your darkest hoodie and waterproof boots.
+
+[ ] Cost_Per_Wear (The "Warehouse" Metric):
+
+Input the price of a garment. The app divides by "Wear Count" to show you the real value.
+
+Goal: Identify "High-Value" staples vs. "Vault Rot" (items you bought but never wear).
+
+[ ] Dynamic_Dashboard_Ambience:
+
+The UI background subtly shifts colors based on the time of day and local Lake Tapps weather. If it’s sunset at the lake, the "Onyx_Amber" theme glows a bit warmer.
+
+8. System_Hardening (The Dev Ops)
+[ ] Auto_Backup_Sequence: A cron job that exports your PocketBase pb_data to a private Google Drive or a physical HDD every Sunday.
+
+[ ] Image_Compression_Pipeline: Automatically downscale 4K phone photos to 1080p before saving to PocketBase to keep the "Vault" from bloating your SSD.
+
+[ ] CI/CD for Stylist_OS: Set up a GitHub Action so when you git push, the app automatically builds and checks for errors before you even open your phone.
+
+9. Business? (The Commercial Pivot)
+[ ] The "Edge-First" Model (Zero Server Overhead):
+
+Instead of hosting massive models, the app runs the "Heavy Thinking" on the user's local hardware (like your Ollama setup). You sell the Interface and the Workflow, not the compute.
+
+Profitability: You don't have a $5,000/month AWS bill if the user is the one spinning the fans.
+
+[ ] Affiliate Integration (The "Missing Piece" Commission):
+
+When the AI suggests an outfit but realizes you are missing a "Cream Linen Shirt" to complete the look, it provides a direct link to buy one.
+
+Revenue: You take a 5–15% cut of every sale generated through the "Stylist Suggestion."
+
+[ ] B2B: The "Smart Mirror" White-Label:
+
+Sell the API to mid-tier clothing brands. Their customers upload their current closet, and the brand's website shows them exactly how new arrivals would "fit" into their existing roster.
+
+Value: It slashes return rates for retailers because people actually know what they can wear the item with before they buy it.
+
+[ ] The "Trend-Watcher" Data Aggregator:
+
+Anonymize the data (e.g., "In the PNW Sector, 40% of users are pivoting from Dark Academia to Gorpcore this month").
+
+Revenue: Brands pay six figures for real-time, "In-The-Closet" data that isn't just based on what people buy, but what they actually wear.
+
+[ ] "Pro" Features (The One-Time Buy):
+
+Avoid the monthly sub. Offer a $20 "Lifetime License" for the PNG Generation engine, unlimited friends in a "Locker Group," and advanced travel packing logic.
+
+[ ] Wardrobe Valuation for Insurance:
+
+Automate a PDF export of the entire "Vault" with estimated values. People with high-end collections (or just a lot of vintage) will pay for an easy way to prove their inventory to an insurance company in case of a fire or theft.
