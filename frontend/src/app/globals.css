@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --panel: #151515;
+  --card: #111111;
+  --border: #222222;
+  --border-subtle: #333333;
+  --accent: #fde68a;
+  --accent-muted: #451a03;
+  --text-muted: #888888;
+  --text-subtle: #555555;
+  --bg-contrast: #e8e6e3; /* For the user bubble / primary CTA */
+  --interactive-highlight: #ffffff;
+  --border-strong: #444444;
+  --destructive-border: #7f1d1d;
+  --destructive-text: #fca5a5;
+  --destructive-hover-border: #f87171;
+  --destructive-hover-text: #ef4444;
+  --destructive-surface: #450a0a;
+}
+
+[data-theme='parchment'] {
+  --background: #f4f1ea;
+  --foreground: #433d35;
+  --panel: #eae4d3;
+  --card: #dfd8c4;
+  --border: #d1c7b7;
+  --border-subtle: #c4b9a8;
+  --accent: #8b4513;
+  --accent-muted: #f5deb3;
+  --text-muted: #7a7369;
+  --text-subtle: #a69d8f;
+  --bg-contrast: #433d35; /* Inverts for the contrast bubble */
+  --interactive-highlight: #f5f2eb;
+  --border-strong: #bfb5a3;
+  --destructive-border: #991b1b;
+  --destructive-text: #b91c1c;
+  --destructive-hover-border: #dc2626;
+  --destructive-hover-text: #b91c1c;
+  --destructive-surface: #fef2f2;
+}
+
+[data-theme='voltage'] {
+  --background: #000000;
+  --foreground: #00ff41;
+  --panel: #0a0a0a;
+  --card: #050505;
+  --border: #00ff41;
+  --border-subtle: #008f24;
+  --accent: #00ff41;
+  --accent-muted: #002200;
+  --text-muted: #00ff41;
+  --text-subtle: #004411;
+  --bg-contrast: #00ff41;
+  --interactive-highlight: #39ff5c;
+  --border-strong: #00cc33;
+  --destructive-border: #ff4444;
+  --destructive-text: #ff6b6b;
+  --destructive-hover-border: #ff8888;
+  --destructive-hover-text: #ff9999;
+  --destructive-surface: #330000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-card: var(--card);
+  --color-border-dim: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
+  --color-text-muted: var(--text-muted);
+  --color-text-subtle: var(--text-subtle);
+  --color-bg-contrast: var(--bg-contrast);
+  --color-interactive-highlight: var(--interactive-highlight);
+  --color-border-strong: var(--border-strong);
+  --color-destructive-border: var(--destructive-border);
+  --color-destructive-text: var(--destructive-text);
+  --color-destructive-hover-border: var(--destructive-hover-border);
+  --color-destructive-hover-text: var(--destructive-hover-text);
+  --color-destructive-surface: var(--destructive-surface);
+}
